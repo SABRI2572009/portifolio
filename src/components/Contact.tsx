@@ -2,46 +2,59 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Mail, MapPin, Phone, Github, Linkedin, Twitter } from "lucide-react";
+import {
+  Mail,
+  MapPin,
+  Phone,
+  Github,
+  Linkedin,
+  Facebook,
+  Instagram,
+} from "lucide-react";
 
 const Contact = () => {
   const contactInfo = [
     {
       icon: <Mail className="h-6 w-6" />,
       title: "Email",
-      content: "john.doe@example.com",
-      href: "mailto:john.doe@example.com"
+      content: "ishimwengambasabri@gmail.com",
+      href: "mailto:ishimwengambasabri@gmail.com",
     },
     {
       icon: <Phone className="h-6 w-6" />,
       title: "Phone",
-      content: "+1 (555) 123-4567", 
-      href: "tel:+15551234567"
+      content: "+250 783 993 391",
+      href: "tel:+250783993391",
     },
     {
       icon: <MapPin className="h-6 w-6" />,
       title: "Location",
-      content: "San Francisco, CA",
-      href: "#"
-    }
+      content: "Kigali, Rwanda",
+      href: "https://www.google.com/maps/place/Kigali,+Rwanda",
+    },
   ];
 
   const socialLinks = [
     {
       icon: <Github className="h-6 w-6" />,
       name: "GitHub",
-      href: "#"
+      href: "https://github.com/SABRI2572009",
     },
     {
       icon: <Linkedin className="h-6 w-6" />,
-      name: "LinkedIn", 
-      href: "#"
+      name: "LinkedIn",
+      href: "https://www.linkedin.com/in/your-profile",
     },
     {
-      icon: <Twitter className="h-6 w-6" />,
-      name: "Twitter",
-      href: "#"
-    }
+      icon: <Facebook className="h-6 w-6" />,
+      name: "Facebook",
+      href: "https://www.facebook.com/ishimwe.sabri/",
+    },
+    {
+      icon: <Instagram className="h-6 w-6" />,
+      name: "Instagram",
+      href: "https://www.instagram.com/smiler_sabri/",
+    },
   ];
 
   return (
@@ -54,7 +67,8 @@ const Contact = () => {
               Let's Work Together
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Have a project in mind? I'd love to hear about it. Let's create something amazing together.
+              Have a project in mind? I'd love to hear about it. Let's create
+              something amazing together.
             </p>
           </div>
 
@@ -72,8 +86,8 @@ const Contact = () => {
                     <label className="text-sm font-medium text-foreground mb-2 block">
                       First Name
                     </label>
-                    <Input 
-                      placeholder="John" 
+                    <Input
+                      placeholder="John"
                       className="bg-secondary/50 border-border focus:border-primary-glow transition-colors"
                     />
                   </div>
@@ -81,46 +95,46 @@ const Contact = () => {
                     <label className="text-sm font-medium text-foreground mb-2 block">
                       Last Name
                     </label>
-                    <Input 
-                      placeholder="Doe" 
+                    <Input
+                      placeholder="Doe"
                       className="bg-secondary/50 border-border focus:border-primary-glow transition-colors"
                     />
                   </div>
                 </div>
-                
+
                 <div>
                   <label className="text-sm font-medium text-foreground mb-2 block">
                     Email
                   </label>
-                  <Input 
-                    type="email" 
-                    placeholder="john@example.com" 
+                  <Input
+                    type="email"
+                    placeholder="john@example.com"
                     className="bg-secondary/50 border-border focus:border-primary-glow transition-colors"
                   />
                 </div>
-                
+
                 <div>
                   <label className="text-sm font-medium text-foreground mb-2 block">
                     Subject
                   </label>
-                  <Input 
-                    placeholder="Project Discussion" 
+                  <Input
+                    placeholder="Project Discussion"
                     className="bg-secondary/50 border-border focus:border-primary-glow transition-colors"
                   />
                 </div>
-                
+
                 <div>
                   <label className="text-sm font-medium text-foreground mb-2 block">
                     Message
                   </label>
-                  <Textarea 
-                    placeholder="Tell me about your project..." 
+                  <Textarea
+                    placeholder="Tell me about your project..."
                     rows={5}
                     className="bg-secondary/50 border-border focus:border-primary-glow transition-colors resize-none"
                   />
                 </div>
-                
-                <Button 
+
+                <Button
                   className="w-full bg-primary hover:bg-primary-glow shadow-elegant hover:shadow-glow transition-all duration-300 transform hover:scale-[1.02]"
                   size="lg"
                 >
@@ -129,27 +143,24 @@ const Contact = () => {
               </CardContent>
             </Card>
 
-            {/* Contact Info */}
+            {/* Contact Info + Socials + Availability */}
             <div className="space-y-8">
               {/* Contact Details */}
               <div className="space-y-6">
                 {contactInfo.map((info, index) => (
-                  <Card 
+                  <Card
                     key={index}
-                    className="bg-card-gradient border-border shadow-card hover:shadow-elegant transition-all duration-300 hover:transform hover:scale-105"
+                    onClick={() => window.open(info.href, "_blank")}
+                    className="cursor-pointer bg-card-gradient border-border shadow-card hover:shadow-elegant transition-all duration-300 hover:transform hover:scale-105"
                   >
                     <CardContent className="p-6">
                       <div className="flex items-center gap-4">
-                        <div className="text-primary-glow">
-                          {info.icon}
-                        </div>
+                        <div className="text-primary-glow">{info.icon}</div>
                         <div>
                           <h3 className="font-semibold text-foreground mb-1">
                             {info.title}
                           </h3>
-                          <p className="text-muted-foreground">
-                            {info.content}
-                          </p>
+                          <p className="text-muted-foreground">{info.content}</p>
                         </div>
                       </div>
                     </CardContent>
@@ -167,11 +178,13 @@ const Contact = () => {
                 <CardContent>
                   <div className="flex gap-4">
                     {socialLinks.map((social, index) => (
-                      <Button 
+                      <Button
                         key={index}
-                        variant="ghost" 
+                        variant="ghost"
                         size="icon"
+                        onClick={() => window.open(social.href, "_blank")}
                         className="hover:bg-primary/20 hover:text-primary-glow transition-all duration-300 hover:scale-110"
+                        aria-label={social.name}
                       >
                         {social.icon}
                       </Button>
@@ -190,8 +203,8 @@ const Contact = () => {
                     </h3>
                   </div>
                   <p className="text-muted-foreground">
-                    I'm currently available for freelance projects and full-time opportunities. 
-                    Let's discuss how we can work together!
+                    I'm currently available for freelance projects and full-time
+                    opportunities. Let's discuss how we can work together!
                   </p>
                 </CardContent>
               </Card>

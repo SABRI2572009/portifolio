@@ -30,7 +30,7 @@ const About = () => {
               About Me
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Passionate developer with 5+ years of experience creating digital solutions that make a difference.
+              Passionate developer with 1+ years of experience creating digital solutions that make a difference.
             </p>
           </div>
           
@@ -39,9 +39,10 @@ const About = () => {
             {/* Profile */}
             <div className="space-y-6">
               <p className="text-lg text-muted-foreground leading-relaxed">
-                I'm a full-stack developer who loves turning complex problems into simple, 
-                elegant solutions. My journey in web development started 5 years ago, and 
-                I've been fascinated by the endless possibilities of technology ever since.
+                Hello! I'm Sabri, I'm a student at INSTITUT DON BOSCO KABARONDO TSS with a passion for crafting 
+                innovative digital solutions from Rwanda. With over a year of experience in the tech industry, 
+                I've honed my skills in various programming languages and frameworks, allowing me 
+                to tackle diverse projects with confidence and creativity.
               </p>
               <p className="text-lg text-muted-foreground leading-relaxed">
                 When I'm not coding, you'll find me exploring new technologies, contributing 
@@ -53,13 +54,13 @@ const About = () => {
             <div className="grid grid-cols-2 gap-6">
               <Card className="bg-card-gradient border-border shadow-card hover:shadow-elegant transition-all duration-300">
                 <CardContent className="p-6 text-center">
-                  <div className="text-3xl font-bold text-primary-glow mb-2">50+</div>
+                  <div className="text-3xl font-bold text-primary-glow mb-2">10+</div>
                   <div className="text-muted-foreground">Projects Completed</div>
                 </CardContent>
               </Card>
               <Card className="bg-card-gradient border-border shadow-card hover:shadow-elegant transition-all duration-300">
                 <CardContent className="p-6 text-center">
-                  <div className="text-3xl font-bold text-accent-glow mb-2">5+</div>
+                  <div className="text-3xl font-bold text-accent-glow mb-2">1+</div>
                   <div className="text-muted-foreground">Years Experience</div>
                 </CardContent>
               </Card>

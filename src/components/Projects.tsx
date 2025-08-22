@@ -9,23 +9,15 @@ const Projects = () => {
       title: "E-Commerce Platform",
       description: "A full-stack e-commerce solution with React, Node.js, and Stripe integration. Features include user authentication, product management, shopping cart, and payment processing.",
       image: "/api/placeholder/400/250",
-      technologies: ["React", "Node.js", "PostgreSQL", "Stripe", "Tailwind CSS"],
+      technologies: ["HTML", "CSS", "JavaScript", "PHP"],
       liveUrl: "#",
       githubUrl: "#"
     },
     {
-      title: "Task Management App",
-      description: "A collaborative project management tool built with Next.js and real-time updates. Includes drag-and-drop functionality, team collaboration, and progress tracking.",
-      image: "/api/placeholder/400/250", 
-      technologies: ["Next.js", "TypeScript", "Prisma", "Socket.io", "Tailwind CSS"],
-      liveUrl: "#",
-      githubUrl: "#"
-    },
-    {
-      title: "Weather Dashboard",
-      description: "A responsive weather application with location-based forecasts, interactive charts, and beautiful animations. Integrates with multiple weather APIs for accurate data.",
+      title: "ISOKO",
+      description: "A platform that connects farmers and buyers to the markets information and helps to buy and sell agricultural products online and assist in weather information.",
       image: "/api/placeholder/400/250",
-      technologies: ["React", "Chart.js", "OpenWeather API", "SCSS", "PWA"],
+      technologies: ["Html", "Css", "JavaScript", "PHP"],
       liveUrl: "#",
       githubUrl: "#"
     },
@@ -33,9 +25,17 @@ const Projects = () => {
       title: "Portfolio Website",
       description: "A modern, responsive portfolio website showcasing my work and skills. Built with performance and accessibility in mind, featuring smooth animations and clean design.",
       image: "/api/placeholder/400/250",
-      technologies: ["React", "TypeScript", "Tailwind CSS", "Framer Motion", "Vite"],
+      technologies: ["React", "TypeScript", "Tailwind CSS", "Vite" ,"JavaScript"],
       liveUrl: "#",
-      githubUrl: "#"
+      githubUrl: "https://github.com/SABRI2572009/my-creative-build.git"
+    },
+    {
+      title: "Maternal Hub",
+      description: "A platform that connects mothers with resources, support, and community. Features include a directory of services, forums, and educational content.",
+      image: "/api/placeholder/400/250",
+      technologies: ["React", "TypeScript", "Tailwind CSS", "Vite" ,"JavaScript"],
+      liveUrl: "#",
+      githubUrl: "https://github.com/SABRI2572009/my-creative-build.git"
     }
   ];
 

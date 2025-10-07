@@ -10,30 +10,32 @@ const Hero = () => {
     <section
       id="home"
       className="min-h-screen flex items-center justify-center bg-hero-gradient relative overflow-hidden md:pt-[90px]"
+      style={{ backgroundImage: "url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQe_RKkjc33YBgkK212t9WK4dMFMC_TY-TOA&s')",
+      backgroundSize: "cover", backgroundPosition: "center"
+      }}
     >
       {/* Animated background elements */}
       <div className="absolute inset-0 bg-hero-glow opacity-50"></div>
-      <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/10 rounded-full blur-3xl animate-pulse"></div>
-      <div className="absolute bottom-1/3 right-1/4 w-80 h-80 bg-accent/10 rounded-full blur-3xl animate-pulse delay-1000"></div>
+      <div className="absolute top-1/4 left-1/4 w-64 sm:w-80 md:w-96 h-64 sm:h-80 md:h-96 bg-primary/10 rounded-full blur-3xl animate-pulse"></div>
+      <div className="absolute bottom-1/3 right-1/4 w-56 sm:w-64 md:w-80 h-56 sm:h-64 md:h-80 bg-accent/10 rounded-full blur-3xl animate-pulse delay-1000"></div>
 
-      <div className="container mx-auto px-6 relative z-10">
-        {/* Flex row for content & image */}
-        <div className="flex flex-col md:flex-row items-center md:items-start justify-between gap-12">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div className="flex flex-col md:flex-row items-center md:items-start justify-between gap-8 md:gap-12">
           {/* Left Content */}
-          <div className="text-center md:text-left max-w-2xl">
-            <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-text-gradient bg-clip-text text-transparent animate-in slide-in-from-left duration-1000">
+          <div className="text-center md:text-left max-w-xl md:max-w-lg lg:max-w-xl">
+            <h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold mb-4 bg-text-gradient bg-clip-text text-transparent animate-in slide-in-from-left duration-1000">
               NGAMBA ISHIMWE Sabri
             </h1>
 
-            <p className="text-xl md:text-2xl text-muted-foreground mb-4 animate-in slide-in-from-left duration-1000 delay-200">
-              Website and App Developer
+            <p className="text-lg text-white font-bold sm:text-xl md:text-2xl mb-4 animate-in slide-in-from-left duration-1000 delay-200">
+              Website and System Developer
             </p>
 
-            <p className="text-lg text-muted-foreground mb-8 animate-in slide-in-from-left duration-1000 delay-400">
-              I craft exceptional digital experiences with modern technologies.
-              Passionate about clean code, innovative solutions, and bringing
-              ideas to life.
+            <p className="text-base sm:text-lg md:text-xl mb-8 animate-in slide-in-from-left duration-1000 delay-400">
+              &lt; Hello World! /&gt; I&apos;m <span className="font-semibold">Sabri</span>, a developer creating modern and responsive websites and Systems.
             </p>
+
+
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start mb-12 animate-in slide-in-from-left duration-1000 delay-600">
@@ -55,41 +57,36 @@ const Hero = () => {
             </div>
 
             {/* Social Links */}
-            <div className="flex justify-center md:justify-start gap-6 mb-12 animate-in slide-in-from-left duration-1000 delay-800">
+            <div className="flex justify-center md:justify-start gap-4 sm:gap-6 mb-12 animate-in slide-in-from-left duration-1000 delay-800">
               <Button
                 variant="ghost"
                 size="icon"
-                className="hover:bg-primary/20 text-center hover:text-primary-glow transition-colors"
+                className="hover:bg-primary/20 hover:text-primary-glow transition-colors"
+                onClick={() => window.open("https://github.com/SABRI2572009")}
               >
-                <Github
-                  className="h-6 w-6"
-                  onClick={() => window.open("https://github.com/SABRI2572009")}
-                />
+                <Github className="h-5 w-5 sm:h-6 sm:w-6" />
               </Button>
 
               <Button
                 variant="ghost"
                 size="icon"
                 className="hover:bg-primary/20 hover:text-primary-glow transition-colors"
+                onClick={() =>
+                  window.open("https://www.linkedin.com/in/your-profile")
+                }
               >
-                <Linkedin
-                  className="h-6 w-6"
-                  onClick={() =>
-                    window.open("https://www.linkedin.com/in/your-profile")
-                  }
-                />
+                <Linkedin className="h-5 w-5 sm:h-6 sm:w-6" />
               </Button>
+
               <Button
                 variant="ghost"
                 size="icon"
                 className="hover:bg-primary/20 hover:text-primary-glow transition-colors"
+                onClick={() =>
+                  window.open("mailto:ishimwengambasabri@gmail.com")
+                }
               >
-                <Mail
-                  className="h-6 w-6"
-                  onClick={() =>
-                    window.open("mailto:ishimwengambasabri@gmail.com")
-                  }
-                />
+                <Mail className="h-5 w-5 sm:h-6 sm:w-6" />
               </Button>
             </div>
 
@@ -105,12 +102,11 @@ const Hero = () => {
           </div>
 
           {/* Right Image */}
-          <div className="flex-shrink-0 animate-in slide-in-from-right duration-1000">
+          <div className="flex-shrink-0 animate-in slide-in-from-right duration-1000 mt-8 md:mt-0">
             <img
               src="https://avatars.githubusercontent.com/u/192989265?v=4"
               alt="Profile"
-              className="rounded-full shadow-lg mx-auto md:mx-0 hover:scale-105 transition-transform"
-              style={{ width: "400px", height: "400px" }}
+              className="rounded-full shadow-lg mx-auto md:mx-0 hover:scale-105 transition-transform w-48 sm:w-56 md:w-96 h-48 sm:h-56 md:h-96"
             />
           </div>
         </div>

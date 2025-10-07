@@ -6,37 +6,14 @@ import { ExternalLink, Github } from "lucide-react";
 const Projects = () => {
   const projects = [
     {
-      title: "E-Commerce Platform",
-      description: "A full-stack e-commerce solution with React, Node.js, and Stripe integration. Features include user authentication, product management, shopping cart, and payment processing.",
-      image: "/api/placeholder/400/250",
-      technologies: ["HTML", "CSS", "JavaScript", "PHP"],
-      liveUrl: "#",
-      githubUrl: "#"
-    },
-    {
-      title: "ISOKO",
-      description: "A platform that connects farmers and buyers to the markets information and helps to buy and sell agricultural products online and assist in weather information.",
-      image: "/api/placeholder/400/250",
-      technologies: ["Html", "Css", "JavaScript", "PHP"],
-      liveUrl: "#",
-      githubUrl: "#"
-    },
-    {
       title: "Portfolio Website",
       description: "A modern, responsive portfolio website showcasing my work and skills. Built with performance and accessibility in mind, featuring smooth animations and clean design.",
       image: "/api/placeholder/400/250",
       technologies: ["React", "TypeScript", "Tailwind CSS", "Vite" ,"JavaScript"],
-      liveUrl: "#",
+      liveUrl: "https://sabriprofile.netlify.app/",
       githubUrl: "https://github.com/SABRI2572009/my-creative-build.git"
     },
-    {
-      title: "Maternal Hub",
-      description: "A platform that connects mothers with resources, support, and community. Features include a directory of services, forums, and educational content.",
-      image: "/api/placeholder/400/250",
-      technologies: ["React", "TypeScript", "Tailwind CSS", "Vite" ,"JavaScript"],
-      liveUrl: "#",
-      githubUrl: "https://github.com/SABRI2572009/my-creative-build.git"
-    }
+  
   ];
 
   return (
